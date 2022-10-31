@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <title>userregistration</title>
+        <style>
+            
+          
+
+
+            form {
+    border: 3px solid #f1f1f1;
+width: 80%;
+top: 50%;
+border-radius: 20px;
+
+}
+
+        </style> <link href="index.css" rel="stylesheet">
+</head>
+<body >
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
+    
+          <div id="logo" style="font-size:40px;font-family:Georgia, 'Times New Roman', Times, serif">
+            <a href="index.html">QUICK CAB</a>
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!--<h1><a href="index.html">Regna</a></h1>-->
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul  >
+              <li><a class="nav-link scrollto active" href="userhome.html">Home</a></li>
+              
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li><a class="nav-link scrollto" href="userprofile.html">Profile</a></li>
+              <li><a class="nav-link scrollto" href="index.html">LogOut</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+       
+  </header>
+        
+        <div style="position: relative;
+        text-align: center;
+        color: white;">
+            <!-- <div style="position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);color: #2dca98;font-size: 40px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">WELCOME TO QUICK CAB</div>
+        
+        </div> -->
+        <h2 style="color: black;">COMPLETE YOUR PROFILE</h2>
+        
+        
+            <form action="print.html" method="POST" style="color: black;">
+                <label>Name</label>
+                <input type="text" placeholder="Full Name " name="name" style="width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box; border-radius: 20px;">
+                
+                       <br><br> <label for="gender">
+                            Gender
+                        </label>
+                    <input type="radio" id="male" value ="Male" name="gender" />Male
+                        <input type="radio" id="female" value ="Female" name="gender"/>Female
+                   
+                        <br><br>
+                        <label for="mob">
+                            Age
+                        </label>
+                   <input type="number" id="age"placeholder="Your age" style="width: 70%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   box-sizing: border-box; border-radius: 20px;"/>
+                    <br><label for="address">
+                            Address
+                        </label>
+                    <textarea id="address"  rows="4" cols="20" placeholder="Enter your permanent address" required style="width: 70%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        box-sizing: border-box; border-radius: 20px;"></textarea>
+                    <br><label for="email">
+                            Email
+                        </label>
+                    <input type="email" id="email" placeholder="Enter your email" required style="width: 70%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box; border-radius: 20px;"/>
+<br><label for="mob">
+                            Mobile Number
+                        </label>
+                   <input type="number" id="mob"placeholder="Enter your mobile number " required style="width: 70%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   box-sizing: border-box; border-radius: 20px;"/>
+                    <br>
+                  
+                           
+                    <label for="mob">
+                        Vehicle Number
+                    </label>
+               <input type="number" id="vno"placeholder="Enter your Vehicle number" style="width: 70%;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box; border-radius: 20px;"/>
+                <br>
+               <br><label for ="contact">
+                Can we contact you ?
+            </label>
+                <input type="radio" id="yes" value="yes" name="contact"/>Yes
+                <input type="radio" id="no" value="no" name="contact"/>No
+            
+                      <br> <br> <label for="com">
+                           Communication Preference
+                        </label>
+                    <input type="checkbox" id="call" value ="call" name="com"/>Call
+                        <input type="checkbox" id="sms" value ="sms" name="com"/>SMS
+                    
+                
+                
+                   
+                     <br><br><br><input type="reset" style="background-color: #4912d3;
+                        color: white;
+                        padding: 14px 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;"></td>
+                
+                    <td><input type="submit"  onclick="saveData();" id="submit" name="save" value="submit" style="background-color: #4912d3;
+                        color: white;
+                        padding: 14px 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;"></td>
+                </tr>
+        
+            </form>
+        </table>
+</body>
+</html>
