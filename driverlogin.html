@@ -1,82 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    
-        <title>userlogin</title>
-        <style>
-            
-form {
-    border: 3px solid #f1f1f1;
-width: 40%;
-border-radius: 30px;
-line-height: 30px;
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <style>
+      input::placeholder {
+    font-family: Gabriola;
+    font-size: 20px;
 }
-
-
-
-
-
-        </style>
-         <link href="index.css" rel="stylesheet">
+    </style>
 </head>
-<body bgcolor="AFEEE">
-<header  class="fixed-top d-flex align-items-center header-transparent" >
-  <div class="container d-flex justify-content-between align-items-center">
 
-    <div  style="font-size:40px;font-family:Georgia, 'Times New Roman', Times, serif;" >
-      <a href="index.html">QUICK CAB</a>
-      <!-- Uncomment below if you prefer to use a text logo -->
-      <!--<h1><a href="index.html">Regna</a></h1>-->
-    </div>
+<body >
+ 
+    <!-- place navbar here -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
+    
+          <div style="font-size:30px;font-family:Segoe Print;font-weight: 700;">
+            <a href="index.html">QUICK CAB</a>
+           <img src="taxi.png" style="
+              width: 22%;
+              height: 10vh;align-items: flex-end;">
+    
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!--<h1><a href="index.html">Regna</a></h1>-->
+          </div>
+    
+    
+          <nav id="navbar" class="navbar">
+            <ul  >
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="#">About</a></li>
+              
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li class="dropdown">
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      
+  </header>
+  <br><br><br><br><br><br><br>
+    <center>
+      <form id="form1" action="driverhome.html" method="post" style="background-color: rgba(25, 102, 236, 0.703);width: 60%;border-radius: 50px;" onsubmit="validate(event)">
 
-
-</header>
-<br><br><br>
-  <a href="index.html" style="background-color: #2382b5;
-                  color: white;
-                  padding: 14px 25px;
-                  
-                  text-decoration: none;
-                  display: inline-block;">HOME</a>
-        <div>
-        <center><form action="driverhome.html" method="post" style="background-color: white">
-            
-            <center><h2>DRIVER LOGIN</h2></center>
-            <div class="container">
-              <input type="email" placeholder="Enter Email" name="email" style="width: 100%;
-              padding: 12px 20px;
-              margin: 8px 0;
-              display: inline-block;
-              border:1px solid #ccc;
-              box-sizing: border-box;" required>
+        <center>
+          <img src="login.png" style="
+              width: 10%;
+              height: 10vh;align-items: flex-end;margin-top: -35px;">
+          <h2 style="font-family: SimSun;color:#940e6cce">DRIVER LOGIN</h2>
+        </center>
+        <div class="container">
           
-              <input type="password" placeholder="Enter Password" name="psw" style="width: 100%;
+          <input type="email" placeholder="Enter Email" id="email" style="width: 60%;
               padding: 12px 20px;
               margin: 8px 0;
               display: inline-block;
               border:1px solid #ccc;
-              box-sizing: border-box;" required>
-                  
-              <button type="submit" style="background-color: #04AA6D;
+              box-sizing: border-box;" minlength="5" maxlength="50" required>
+
+          <input type="password" placeholder="Enter Password" id="psw" style="width: 60%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border:1px solid #ccc;
+              box-sizing: border-box;" minlength="8" maxlength="25" required>
+
+          <button type="submit" style="background-color: #04AA6D;
               color: white;
               padding: 14px 20px;
               margin: 8px 0;
               border: none;
               cursor: pointer;
-              width: 100%;" class="btn-login" id="btn-login">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-          
-            <div class="container" style="background-color:#f1f1f1;padding: 16px;">
-               <a href="driverreg.html">New User?Register</a><br><br>
-              <span class="psw"><a href="#">Forgot password?</a></span>
-            </div>
-          </form></center></div>
+              width: 60%;font-family: SimSun;font-weight: 400;" class="btn-login" id="btn-login">LOGIN</button><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="padding: 6px;width: 50%;">
+          <a href="driverreg.html">New User?Register</a><br><br>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </center>
+  </div>
 
 
 
-          
+
 </body>
+
 </html>

@@ -1,47 +1,63 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    
-        <title>userregistration</title>
-        <style>
-            
-          
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-            form {
-    border: 3px solid #f1f1f1;
-width: 80%;
-top: 50%;
-border-radius: 20px;
-
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <style>
+      input::placeholder {
+    font-family: Gabriola;
+    font-size: 20px;
 }
-
-        </style> <link href="index.css" rel="stylesheet">
+    </style>
 </head>
+
 <body >
-        <header  class="fixed-top d-flex align-items-center header-transparent" >
-                <div class="container d-flex justify-content-between align-items-center">
+ 
+    <!-- place navbar here -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
+    
+          <div style="font-size:30px;font-family:Segoe Print;font-weight: 700;">
+            <a href="index.html">QUICK CAB</a>
+           <img src="taxi.png" style="
+              width: 22%;
+              height: 10vh;align-items: flex-end;">
+    
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!--<h1><a href="index.html">Regna</a></h1>-->
+          </div>
+    
+    
+          <nav id="navbar" class="navbar">
+            <ul  >
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="#">About</a></li>
               
-                  <div  style="font-size:40px;font-family:Georgia, 'Times New Roman', Times, serif;" >
-                    <a href="index.html">QUICK CAB</a>
-                    <!-- Uncomment below if you prefer to use a text logo -->
-                    <!--<h1><a href="index.html">Regna</a></h1>-->
-                  </div>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li class="dropdown">
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      
+  </header>
+  
               
-              
-              </header>
-              
-        <a href="index.html" style="background-color: #2382b5;
-                  color: white;
-                  padding: 14px 25px;
-                  text-align: center;
-                  text-decoration: none;
-                  display: inline-block;">HOME</a>
+       
         <div style="position: relative;
         text-align: center;
         color: white;">
-            <img src="https://media.istockphoto.com/photos/taxi-picture-id519870714?k=20&m=519870714&s=170667a&w=0&h=8fxhgh3qVR99PoHNKQQDXzJ-JmZc4QuZb8Q1Y4pJRt4=" width="100%" style="opacity: .8;">
+            <img src="https://img.freepik.com/premium-vector/taxi-driver-man-driving-yellow-car-isolated-background-vector-illustration-cartoon-style_165429-1131.jpg" width="100%" style="opacity: .8;">
             <!-- <div style="position: absolute;
             top: 50%;
             left: 50%;
@@ -53,8 +69,8 @@ border-radius: 20px;
         top: 30%;
       left: 55%;width: 70%;
         transform: translate(-50%, -50%); ">
-           <form action="userhome.html" method="post" style="background-color: white;">    
-               <h1 style="color:rgb(8, 23, 71);">DRIVER REGISTRATION</h2>
+           <form action="userhome.html" method="post" style="background-color: rgba(18, 56, 226, 0.377);margin-top: 150px;margin-left: -300px; width: 80%;">    
+               <h1 style="color:rgb(8, 23, 71);font-family:Gabriola ;">DRIVER REGISTRATION</h2>
                  
                    <input type="text" placeholder="Full Name " name="name" style="width: 70%;
                    padding: 12px 20px;
